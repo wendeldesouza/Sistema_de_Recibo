@@ -1,0 +1,110 @@
+	<?php include("TELA RECIBO/Conexão.php");?>
+	
+	<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<title> TELA DE RECIBO </title>
+					<meta charset="utf-8"/>
+					<link rel="stylesheet" href="CSS/estilo.css" media="all" />	
+					<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+					<script type="text/javascript" src="JS/func.js" ></script>
+					
+		
+					<style>
+					@media print { 
+						#noprint { display:none; } 
+						body { background: #fff; }
+					}
+					</style>
+		</head>
+		<body>
+		
+			<fieldset>	
+				<h1>RECIBO</h1>
+					<div id="center">
+						<!--Aqui tem uma imagem!-->
+							<p align="center"><img src="Img/empetur.png" /></p>
+					</div>
+			
+					<form method ="post" action = "salvar_dad_recibo.php" >
+						<table cellspacing="5">
+							<tr>
+								<label><td>CPF/CNPJ:</td></label> 
+									<td><input type="CPF" name = "CPF_CNPJ" placeholder="Digite o CPF/CNPJ" maxlength="18" required></td>		
+										<label><td>Nª DO RECIBO:</td></label> 
+									<td><input type="Nª DO RECIBO" name ="NUM RECIBO" placeholder="Digite o nª do recibo" required></td>
+							</tr>
+						
+							<tr>
+							<label><td> CEP: </td></label> 
+										<td><input type="text" id="cep" name="cep" placeholder="Digite o cep" maxlength="8" required></td>
+									
+							</tr>
+						</table>
+							
+						<table cellspacing="5">
+								<tr class="ajuste">
+									<label><td>ENDEREÇO:</td></label>
+								<td><input readonly type="text" id="rua" name="rua" placeholder="Digite o endereço" maxlength="50"></td>
+									
+									<label><td> UF:</td></label> 
+									<td><input readonly type="text" name="uf" id="uf">	
+									
+									<label>E-MAIL:</label>
+									<input type="email" id="email" name="E-MAIL" placeholder="Digte o E-MAIL" maxlength="30" required></td>							
+									
+								</tr>	
+						</table>		
+						
+						<table id="tableb" cellspacing="5">
+								<tr>
+									<label><td>RECEBEMOS DE :</td></label>
+									<td><input type="Recebemos de R$" name="PAGANTE" placeholder="Descrição" ></td>
+								</tr>
+								<tr>
+									<label><td> A IMPORTANCIA DE R$: </td></label>
+									<td><input type="importancia" name="VALOR" placeholder="Descrição" ></td>
+								</tr>
+								<tr>
+									<label><td> REFERENTE A: </td></label>
+									<td><input type="Referente" name="REFERÊNCIA" placeholder="Descrição" ></td>
+								</tr>
+						</table>	
+						
+						<table cellspacing="5">
+								<tr>
+									<td>
+										<td colspan="100"><h2 align="center-left"> PELO QUE DAMOS PLENA E TOTAL QUITAÇÃO (OBS): PAGAMOS EM CHEQUE, SÓ QUITADOS APÓS SUA COMPENSAÇÃO.</h2></td>
+									</td>
+								</tr>
+								<tr><label><td>TELEFONE:</td></label>
+									<td><input type="tel" id="TELEFONE" name="TELEFONE" maxlength="15" placeholder="(xx) x xxxx - xxxx" required></td>	
+								</tr>	
+								<tr><label><td>CIDADE:</td></label>
+									<td><input readonly type="text" id="cidade" name="cidade" placeholder="Digite a cidade" maxlength="50"></td>
+								</tr>
+								<tr><label><td>NO (S) DIA (S):</td></label>
+									<td><input type="NO(S)DIA(S)" name="DATA"></td>
+								</tr>
+								<tr>
+									<label><td>CONFORME NOTA FISCAL <br>DE SERVIÇOS Nª:</td></label>
+									<td><input type="CONFORME NOTA FISCAL DE SERVIÇOS Nª" name="NOTA_FISCAL" ></td>
+								</tr>	
+						</table>
+						<br><br>
+						
+						<div id="noprint">
+							<input type="Reset" value="Cancelar" />
+							<input type="submit" value="SALVAR" name="site" />
+						</div>	
+					</form>
+			</fieldset>
+			
+		<div id="noprint">
+			<p align="center"><input type="button" value="imprimir" onclick="window.print()"/>
+		</p>
+		</div>
+		
+		</body>
+	</html>

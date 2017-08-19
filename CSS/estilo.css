@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body {
+	padding: 90px 90px;
+	font-size: 16px;
+	background-color: CCC;
+	font-family: Tahoma, arial, sans-serif;
+}
+
+input{
+	padding:10px;
+	border: 1px solid #E5E5E5;
+	width: 200px;
+	color: #4F4F4F;
+	font-size: 15px;
+	background: #E8E8E8;
+	box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+	-moz-box-shadow: (0,0,0,0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+	}
+
+#tablea input{
+	width:405px;
+}	
+
+#tableb input{
+	width:320px;
+}
+	
+
+input:focus{
+	background:white;
+	border-radius: 10px;
+	border-color: 1px solid #C9C9C9;
+	box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;
+}
+
+.submit input{
+	width: 100px;
+	height: 40px;
+	background-color: #133141;
+	color: #FFF;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+fieldset{
+	border: 1px transparent #000;
+	border-width: 1px;
+	border-style: transpent;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+	-moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+	-webkit-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+}
+
+h1{
+	width: 100%;  
+	font-size: 40px;  
+	text-align: center;
+}
+
+#uf{
+	width:8%;
+}
+
+#number{
+	width: 35px;
+}
+

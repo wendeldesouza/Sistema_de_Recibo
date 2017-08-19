@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	
+		<title>Consultas</title>
+		<link rel="stylesheet" href="CSS/estilo.css" media="all" />	
+<style>
+
+#center{
+	width: 100%;
+	height: 150px;
+	margin: 0 auto;
+	background-position: 75px 50px;
+	background: no-repeat center;
+}
+
+table {
+		height: 200px;
+		margin: 45px 0px 100px 450px;
+		background-color: CCC;
+		font-family: Tahoma, arial, sans-serif;
+		border-collapse: collapse;
+		width: 50%;
+		border-radius: 3px;
+		box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+		-moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+		-webkit-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+	}
+	td, th {
+		border: 0px solid #dddddd;
+		text-align: center;
+		padding: 10px;
+		width: 20px;
+	}
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+	#Pesquisa{
+		
+		text-align: center;
+		width: 25%;
+		background: #CCC;
+		border-radius: 3px;
+		border: none;
+		margin: 100px 0px 0px 600px;
+		box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+		-moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+		-webkit-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+	}
+	#Pesquisa{
+		font-size: 120%;
+	}
+	.btn-default{
+		width: 6%;
+		height: 44px;
+		margin: -5px;
+		background: #CCC;
+		border-radius: 3px;
+		border: none;
+		box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+	}
+	#Consulta{
+		color: gray;
+		font-size: 120%;
+	}
+</style>
+	</head>
+	<body>
+	
+	<fieldset>
+	<h1>CONSULTAR RECIBO</h1>
+	<div id="center">
+		<!--Aqui tem uma imagem!-->
+		<p align="center"><img src="Img/empetur.png" /></p>
+	</div>
+	
+	<form role="search" class="navbar-form">
+		<div class="form-group has-feedback">
+			<input type="text" class="form-control" placeholder="Pesquisar" id="Pesquisa" />
+			<button type="button" class="btn btn-default" placeholder="Consulta" id="Consulta">Consultar</button>
+		</div>
+	</div>
+	
+	<table class="table table-striped table-responsive">
+		<th>Código recibo</th>
+		<th>Nome</th>
+		<th>CPF</th>
+		<th>Telefone</th>
+		<th colspan="2">
+			<a class="btn btn-success" href="#"> Novo</a>
+		</th>
+		<tr>
+			<td>10011002</td>
+			<td>Jackson</td>
+			<td>33232312324</td>
+			<td>9090-9090</td>
+			<td><a id="Editar" class="btn btn-warning" href="#"> Editar</a></td>
+		</tr>
+		<tr>
+			<td>65655898</td>
+			<td>Wendel</td>
+			<td>123456789</td>
+			<td>5858-9090</td>
+			<td><a id="Editar" class="btn btn-warning" href="#"> Editar</a></td>
+		</tr>
+		<tr>
+			<td>10011002</td>
+			<td>Marcelo</td>
+			<td>33232312324</td>
+			<td>9090-9090</td>
+			<td><a id="Editar" class="btn btn-warning" href="#"> Editar</a></td>
+		</tr>
+		<tr>
+			<td>65655898</td>
+			<td>Wendel</td>
+			<td>123456789</td>
+			<td>5858-9090</td>
+			<td><a id="Editar" class="btn btn-warning" href="#"> Editar</a></td>
+		</tr>
+	</table>
+	</fieldset>
+	
+	</body>
+</html>

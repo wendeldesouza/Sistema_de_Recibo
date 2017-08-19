@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+		<head> 
+		<title> CADASTRO </title>
+			<meta charset= "utf-8"/>
+			<link rel="stylesheet" href="CSS/estilo.css" media="all" />	
+				<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+				<script type="text/javascript" src="JS/func.js" ></script>
+				
+				
+		</head>
+	<body> 
+			
+		<fieldset>
+			<h1> CADASTRO </h1>
+			<div id="center">
+					<!--Aqui tem uma imagem!-->
+					<p align="center"><img src="Img/empetur.png" /></p>
+				</div>
+			<form  method = "post" action = "salvar_dados.php" >
+				<table cellspacing="5">
+					<tr>
+						<label><td>CPF/CNPJ:</td></label> 
+							<td><input type="text" name="CPF_CNPJ" placeholder="Digite o CPF/CNPJ" maxlength="18" required></td>
+					</tr>
+					<tr>
+						<label><td>NOME:</td></label> 
+							<td><input type="text" name="NOME" placeholder="Digite o nome" maxlength="50"></td>
+					</tr>	
+					<tr>
+						<label><td>CEP:</td></label>
+							<td><input type="text" name="CEP" id="cep" placeholder="Digite o CEP"  maxlength="8" required></td>
+					</tr>
+					<tr>	
+						<label><td>ENDEREÇO:</td></label>
+							<td><input type="text" name="ENDEREÇO" id="rua" placeholder="Digite o endereço" maxlength="50"></td>	
+						<label><td>Nº:</td></label>
+							<td><input type="text" name="NUMERO" maxlength="5" id="number"></td>
+					</tr>
+					<tr>	
+						<label><td>COMPLEMENTO:</td></label>
+							<td><input type="text" name="COMPLEMENTO" placeholder="Digite o complemento" maxlength="30"></td>
+					</tr>
+					<tr>	
+						<label><td>CIDADE:</td></label>
+							<td><input type="text" name="CIDADE" id="cidade" placeholder="Digite o cidade"  maxlength="30"></td>
+								<label><td> UF:</td></label> 
+										<td><input readonly type="text" name="uf" id="uf"></td>
+					</tr>
+					<tr>
+						<label><td>TELEFONE:</td></label> 
+							<td><input type="text" name="TELEFONE" id="TELEFONE" placeholder="(xx) x xxxx - xxxx" maxlength="11" required></td>
+					</tr>
+					<tr>
+						<label><td> E-MAIL</td></label>
+							<td><input type="email" name="E_MAIL" placeholder="Digite o E-MAIL" size="50" maxlength="50"></td>
+					</tr>
+							
+				</table><br><br>
+					<div>
+						<input type="submit" value="Salvar" />
+							<input type="Reset" value="Cancelar" />
+					</div>
+			</form>
+		</fieldset>
+
+	<body>
+</html>
