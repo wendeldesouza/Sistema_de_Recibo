@@ -1,6 +1,11 @@
 @charset utf-8;
 
 #noprint {
-	display: nome;
-	}
-body{background=#fff;}
+	display: none;
+}
+body {
+	background: #fff;
+	width: 150px;
+	padding: 5%; 
+    font-size: 8pt; 
+}

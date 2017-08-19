@@ -2,13 +2,12 @@
 body {
 	padding: 90px 90px;
 	font-size: 16px;
-	background-color: CCC;
 	font-family: Tahoma, arial, sans-serif;
 }
 
 input{
-	padding:10px;
-	border: 1px solid #E5E5E5;
+	padding: 10px;
+	border: 1px solid #C9C9C9;
 	width: 200px;
 	color: #4F4F4F;
 	font-size: 15px;
@@ -18,18 +17,33 @@ input{
 	-webkit-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
 	}
 
+#msg{
+	width: 320px; 
+	height: 60px; 
+	resize: none;
+	padding:10px;
+	color: #4F4F4F;
+	background: #E8E8E8;
+	border: 1px solid #C9C9C9;
+	font-size: 15px;
+	font-family: Tahoma, arial, sans-serif;
+}
+
 #tablea input{
 	width:405px;
 }	
 
-#tableb input{
+#tableb {
 	width:320px;
 }
-	
+
+#tablec input{
+	width: 150%;
+}	
 
 input:focus{
-	background:white;
-	border-radius: 10px;
+	background: white;
+	border-radius: 1px;
 	border-color: 1px solid #C9C9C9;
 	box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;
 	-moz-box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;
@@ -46,10 +60,10 @@ input:focus{
 	-webkit-border-radius: 3px;
 }
 
-fieldset{
+.btn{
 	border: 1px transparent #000;
 	border-width: 1px;
-	border-style: transpent;
+	border-style: transparent;
 	border-radius: 5px;
 	box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
 	-moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
@@ -62,11 +76,26 @@ h1{
 	text-align: center;
 }
 
-#uf{
-	width:8%;
+#uf {
+	width: 50px;
 }
 
 #number{
 	width: 35px;
 }
 
+#center{
+	padding-bottom: 30px;
+}
+
+.lef{
+	left: center;
+}
+
+.ed{
+	width: 90%;
+}
+
+.aut{
+	width: 90%;
+}
